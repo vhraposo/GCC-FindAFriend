@@ -1,0 +1,393 @@
+* {
+  border: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+:root {
+  font-size: 62.5%;
+  color: white;
+  background: white;
+
+  font-family: "Nunito", sans-serif;
+}
+
+body {
+  background: #f15156;
+}
+
+.page {
+  width: 100%;
+  height: 72rem;
+
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+}
+
+header {
+  background: #e44449;
+  display: flex;
+  justify-content: space-between;
+  padding: 2rem 2rem 2rem 0;
+
+  margin-bottom: 5.2rem;
+}
+
+header img {
+  margin-left: 1rem;
+}
+
+.menuhamburguer {
+  cursor: pointer;
+}
+
+.navbar {
+  position: absolute;
+  top: 8rem;
+  left: 0rem;
+  display: flex;
+
+  background: #e44449;
+  
+  width: 100%;
+  border-radius: 0px 0px 20px 20px;
+  padding-bottom: 3rem;
+}
+
+.line {
+  border-top: 1px solid #ffffff2b;
+  width: 100%;
+  margin-left: 1rem;
+  display: flex;
+  flex-direction: column;
+}
+
+ul {
+  list-style: none;
+  padding-left: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+ul li {
+  margin-left: 1rem;
+}
+
+a {
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 1.8rem;
+  font-weight: 600;
+}
+
+li a:not(:hover) {
+  opacity: 0.5;
+}
+
+.main-div :not(.cards) {
+  padding-left: .5rem;
+  
+}
+
+.logodog {
+  display: flex;
+  align-items: center;
+}
+.logodog img {
+  margin-right: 0.7rem;
+}
+
+.eclipses img {
+  outline: 3px solid #f15156;
+  border-radius: 50%;
+  margin-bottom: 1rem;
+}
+
+.eclipses img + img {
+  margin-left: -1rem;
+}
+.mainphar {
+  font-weight: 800;
+  font-size: 1.4rem;
+
+  margin-bottom: 3.5rem;
+}
+.maintitle {
+  font-size: 4.4rem;
+  font-weight: 700;
+
+  margin-bottom: 3.3rem;
+}
+.cards {
+  background-image: url(./assets/dog-no-bg.png), url(./assets/bg-1.svg);
+  background-position: center top 1rem,  center   bottom ;
+  background-repeat: no-repeat;
+  min-width: 27.9rem;
+  width: 100%;
+  height: 28.5rem;
+  position: relative;
+
+  margin-bottom: 4.7rem;
+  padding-bottom: .1rem;
+}
+
+.cards a {
+  max-width: 23.9rem;
+  width: 100%;
+  height: 5.5rem;
+  position: absolute;
+
+  bottom: 2rem;
+  left: 50%;
+  transform: translateX(-50%);
+
+  background: #ffffff;
+  border-radius: 0.8rem;
+  text-decoration: none;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  color: #0d3b66;
+  font-weight: 800;
+  font-size: 1.4rem;
+  line-height: 1.5rem;
+}
+
+.second-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 7rem;
+  background-color: #ffffff;
+
+  padding-bottom: 7rem;
+
+  z-index: -3;
+  position: relative;
+}
+
+.page2 h2 {
+  font-size: 3rem;
+  font-weight: 700;
+  color: #0d3b66;
+  margin-bottom: 2rem;
+  padding: 0rem 2rem;
+}
+
+.whitecards {
+  padding: 0rem 2rem;
+}
+
+.cardwhite {
+  max-width: 320px;
+  height: 197px;
+  width: 100%;
+  background: hsla(356, 81%, 96%, 0.5);
+
+  border: 1px solid rgba(241, 81, 86, 0.3);
+
+  border-radius: 2rem;
+  margin-bottom: 1rem;
+  padding: 3rem;
+}
+
+.cardwhite img {
+  margin-bottom: 2.4rem;
+}
+
+.cardwhite p {
+  font-size: 1.4rem;
+  color: #000000;
+}
+
+span {
+  font-weight: 700;
+}
+
+.lastpage {
+  background-image: url(./assets/app-screen-bg.svg);
+  background-position: center;
+  background-size: min(120%, 165%);
+  background-repeat: no-repeat;
+
+  width: 100%;
+  height: 30.494rem;
+
+  position: relative;
+}
+.lastpage::before {
+  position: absolute;
+  background: #fdeced5c;
+  width: 100%;
+  height: 28.4rem;
+  content: "";
+
+  z-index: -1;
+
+  margin-top: 2rem;
+}
+
+.hide {
+  display: none;
+}
+
+@media (min-width: 708px) {
+  .lastpage {
+    height: 55rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  body {
+    overflow-x: hidden;
+  }
+  .page {
+    width: 100%;
+    height: 82rem;
+  }
+
+  header {
+    padding-left: 11.2rem;
+  }
+
+  .menuhamburguer {
+    display: none;
+  }
+  .navbar {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    top: 0;
+    justify-content: center;
+
+    background: none;
+
+    
+    position: relative;
+  }
+
+  ul {
+    flex-direction: row;
+    margin-top: 1.5rem;
+    gap: 6.2rem;
+  }
+
+  li a {
+    white-space: nowrap;
+    display: flex;
+
+    font-size: 1.8rem;
+    text-align: center;
+    line-height: 110%;
+  }
+
+  .line {
+    border: none;
+  }
+
+  .main-section {
+    display: flex;
+    width: 100%;
+    height: 70rem;
+
+    margin-left: 5rem;
+  }
+  .main-left-div {
+    display: flex;
+
+    gap: 0.8rem;
+  }
+  .mainphar {
+    font-size: 1.6rem;
+  }
+
+  .animal-phar {
+    display: initial;
+    font-size: 2.4rem;
+    line-height: 3.4rem;
+  }
+
+  .maintitle {
+    width: 51.9rem;
+    font-size: 7.2rem;
+
+    padding-bottom: 8.1rem;
+  }
+
+  .main-div {
+    width: 50%;
+  }
+
+  .cards {
+    background-image: url(./assets/dog-no-bg.png), url(./assets/bg-2.svg);
+    background-size: 43rem, 100rem;
+    
+
+    background-position: top left 3rem, top 4.7rem left;
+
+    width: 50%;
+    height: 94%;
+  }
+
+  .cards a {
+    top: 55rem;
+    left: 25rem;
+    max-width: 40rem;
+    width: 100%;
+    border-radius: 2rem;
+    font-size: 2rem;
+    font-weight: 800;
+    line-height: 3.4rem;
+  }
+  .cards a:hover {
+    background: #eae6e6eb;
+  }
+
+  .second-page {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+  .page2 {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .page2 h2 {
+    font-weight: 700;
+    font-size: 4.8rem;
+  }
+
+  .whitecards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 3.2rem;
+  }
+
+  .cardwhite {
+    flex: 1 0 25rem;
+    
+  }
+
+  .card3{
+    max-width: 70rem;
+    width: 100%;
+  }
+
+  .lastpage {
+    background: url(./assets/app-screen-descktop2.svg) no-repeat;
+    background-size: 100%;
+    max-width: 150%;
+    width: 125rem;
+    position: relative;
+    left: 0;
+    top: 5rem;
+  }
+  .lastpage::before {
+    width: 65.8rem;
+    height: 100%;
+    border-radius: 2rem;
+  }
+}
